@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback form for major CSE subjects</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <form id="survey-form">
+            <h1>Feedback form for major CSE subjects</h1>
+            <fieldset>
+                <legend>Rate the following subjects:</legend>
+                <div class="form-group">
+                    <label for="algorithms">Algorithms:</label>
+                    <input type="number" id="algorithms" name="algorithms" min="1" max="5" required>
+                    <small>Rate from 1 (Low) to 5 (High)</small>
+                </div>
+                <div class="form-group">
+                    <label for="data-structures">Data Structures:</label>
+                    <input type="number" id="data-structures" name="data-structures" min="1" max="5" required>
+                    <small>Rate from 1 (Low) to 5 (High)</small>
+                </div>
+                <div class="form-group">
+                    <label for="database">Database Systems:</label>
+                    <input type="number" id="database" name="database" min="1" max="5" required>
+                    <small>Rate from 1 (Low) to 5 (High)</small>
+                </div>
+                <div class="form-group">
+                    <label for="web-development">Web Development:</label>
+                    <input type="number" id="web-development" name="web-development" min="1" max="5" required>
+                    <small>Rate from 1 (Low) to 5 (High)</small>
+                </div>
+                <div class="form-group">
+                    <label for="machine-learning">Machine Learning:</label>
+                    <input type="number" id="machine-learning" name="machine-learning" min="1" max="5" required>
+                    <small>Rate from 1 (Low) to 5 (High)</small>
+                </div>
+                <div class="form-group">
+                    <label for="software-engineering">Software Engineering:</label>
+                    <input type="number" id="software-engineering" name="software-engineering" min="1" max="5" required>
+                    <small>Rate from 1 (Low) to 5 (High)</small>
+                </div>
+            </fieldset>
+            
+            <fieldset>
+                <legend>Additional Comments</legend>
+                <div class="form-group">
+                    <label for="comments">Any additional comments or suggestions:</label>
+                    <textarea id="comments" name="comments" rows="5"></textarea>
+                </div>
+            </fieldset>
+            
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+    <footer>
+        <p>Created by Manish</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
